@@ -1,0 +1,22 @@
+{
+	"node": "n8n-nodes-base.ssl-checker",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Cybersecurity", "Utility", "Core Nodes"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://www.ssllabs.com/projects/ssllabs-apis/index.html"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://ssl-checker.io/"
+			},
+			{
+				"url": "https://www.ssllabs.com/projects/ssllabs-apis/index.html"
+			}
+		]
+	},
+	"alias": ["SecOps"]
+}
