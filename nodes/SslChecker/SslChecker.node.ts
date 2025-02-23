@@ -133,12 +133,11 @@ export class SslChecker implements INodeType {
 				};
 
 				try {
-					let response = await this.helpers.request(httpOptions);
-					console.log('Check credentials >> ' + JSON.stringify(response));
+					await this.helpers.request(httpOptions);
 				} catch (error) {
 					return {
 						status: 'Error',
-						message: `${error.json}`,
+						message: error,
 					};
 				}
 
