@@ -176,6 +176,7 @@ export class SslChecker implements INodeType {
 						Accept: 'application/json',
 						'Content-Type': 'application/json',
 					},
+					timeout: 20000, // force 20s
 				};
 
 				newItem.json[result_field] = await this.helpers.httpRequest(sslCheckerOptions);
@@ -190,6 +191,7 @@ export class SslChecker implements INodeType {
 						'Content-Type': 'application/json',
 						email: credentials.email,
 					},
+					timeout: 20000, // force 20s
 				};
 
 				let result = await this.helpers.httpRequest(httpOptions);
@@ -212,6 +214,7 @@ export class SslChecker implements INodeType {
 						'Content-Type': 'application/json',
 						email: credentials.email,
 					},
+					timeout: 20000, // force 20s
 				};
 
 				newItem.json[result_field + '.analyze'] = await this.helpers.httpRequest(httpOptions);
